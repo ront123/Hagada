@@ -10,7 +10,7 @@ const HaggadahCard = ({ section, isDarkMode, index }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) setIsVisible(true); },
-      { threshold: 0.1 }
+      { threshold: 0, rootMargin: '100px 0px' }
     );
     if (cardRef.current) observer.observe(cardRef.current);
     return () => observer.disconnect();
