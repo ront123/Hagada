@@ -283,9 +283,6 @@ export default function App() {
         >
           הַגָּדָה שֶׁל פֶּסַח
         </h2>
-        <p className={`text-xl max-w-xl mx-auto leading-relaxed ${isDarkMode ? 'text-parchment-300' : 'text-parchment-700'}`}>
-          לקרוא, לשיר, לשאול ולספר
-        </p>
         <div className={`mt-10 w-24 h-px mx-auto ${isDarkMode ? 'bg-gold-700' : 'bg-gold-300'}`} />
       </section>
 
