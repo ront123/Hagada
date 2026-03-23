@@ -178,6 +178,7 @@ const haggadahData = [
 [IMAGE_MAKOT]
 
 דָּם
+
 צְפַרְדֵּעַ
 
 כִּנִּים
