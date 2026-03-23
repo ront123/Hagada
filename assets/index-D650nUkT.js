@@ -139,6 +139,7 @@ Error generating stack: `+e.message+`
 [IMAGE_MAKOT]
 
 דָּם
+
 צְפַרְדֵּעַ
 
 כִּנִּים
