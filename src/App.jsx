@@ -262,7 +262,7 @@ export default function App() {
           }`}
           style={{ fontFamily: 'var(--font-hebrew)' }}
         >
-          הגדת לוי 2026
+          הגדה של פסח 2026
         </h1>
       </header>
 
@@ -284,7 +284,7 @@ export default function App() {
           הַגָּדָה שֶׁל פֶּסַח
         </h2>
         <p className={`text-xl max-w-xl mx-auto leading-relaxed ${isDarkMode ? 'text-parchment-300' : 'text-parchment-700'}`}>
-          למשפחת לוי — לקרוא, לשיר, לשאול ולספר
+          לקרוא, לשיר, לשאול ולספר
         </p>
         <div className={`mt-10 w-24 h-px mx-auto ${isDarkMode ? 'bg-gold-700' : 'bg-gold-300'}`} />
       </section>
@@ -310,7 +310,7 @@ export default function App() {
           לְשָׁנָה הַבָּאָה בִּירוּשָׁלָיִם!
         </p>
         <p className={`text-sm ${isDarkMode ? 'text-parchment-500' : 'text-parchment-600'}`}>
-          נבנה באהבה עבור משפחת לוי • פסח תשפ״ו
+          נבנה באהבה • פסח תשפ״ו
         </p>
       </footer>
     </div>
