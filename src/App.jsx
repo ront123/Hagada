@@ -56,7 +56,16 @@ const HaggadahCard = ({ section, isDarkMode, index }) => {
         <div className={`text-lg sm:text-xl leading-loose whitespace-pre-line mb-8 ${
           isDarkMode ? 'text-parchment-200' : 'text-parchment-900'
         }`} style={{ fontFamily: 'var(--font-hebrew)', fontWeight: 400 }}>
-          {section.text}
+          {section.text.split('[IMAGE_MAKOT]').map((part, i, arr) => (
+            <React.Fragment key={i}>
+              {part}
+              {i < arr.length - 1 && section.innerImage && (
+                <div className="my-8 rounded-2xl overflow-hidden shadow-lg border-x-4 border-gold-500/20">
+                  <img src={section.innerImage} alt="10 המכות" className="w-full h-auto object-cover" loading="lazy" />
+                </div>
+              )}
+            </React.Fragment>
+          ))}
         </div>
 
         {/* Spicy Button */}
