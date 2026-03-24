@@ -26,11 +26,11 @@ const HaggadahCard = ({ section, isDarkMode, index }) => {
       style={{ animationDelay: `${index * 0.05}s` }}
     >
       {/* Image */}
-      <div className="image-overlay relative">
+      <div className="image-overlay relative bg-black/5 dark:bg-black/20">
         <img
           src={section.image}
           alt={section.title}
-          className="w-full h-64 sm:h-80 object-cover"
+          className="w-full h-auto max-h-[500px] object-contain"
           loading="lazy"
         />
         <div className="absolute bottom-4 right-6 z-10">
@@ -60,8 +60,8 @@ const HaggadahCard = ({ section, isDarkMode, index }) => {
             <React.Fragment key={i}>
               {part}
               {i < arr.length - 1 && section.innerImage && (
-                <div className="my-8 rounded-2xl overflow-hidden shadow-lg border-x-4 border-gold-500/20">
-                  <img src={section.innerImage} alt="10 המכות" className="w-full h-auto object-cover" loading="lazy" />
+                <div className="my-8 rounded-2xl overflow-hidden shadow-lg border-x-4 border-gold-500/20 bg-black/5 dark:bg-black/20">
+                  <img src={section.innerImage} alt="10 המכות" className="w-full h-auto max-h-[500px] object-contain mx-auto" loading="lazy" />
                 </div>
               )}
             </React.Fragment>
